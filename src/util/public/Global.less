@@ -1,0 +1,379 @@
+/* -------------iconfont图标start ----------------- */
+@font-face {
+  font-family: 'iconfont';  /* project id 1410322 */
+  src: url('../../assets/font/iconfont.eot?t=1568283652007');
+  src: url('../../assets/font/iconfont.eot?t=1568283652007#iefix') format('embedded-opentype'),
+  url('../../assets/font/iconfont.woff?t=1543299625929') format('woff'),
+  url('../../assets/font/iconfont.ttf?t=1543299625929') format('truetype'),
+  url('../../assets/font/iconfont.svg?t=1543299625929#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconshouji:before {
+	content: "\e632";
+}
+
+.iconosm-qq:before {
+	content: "\e6cb";
+}
+
+.iconosm-weixin:before {
+	content: "\e6d1";
+}
+
+.iconosm-weibo:before {
+	content: "\e6d2";
+}
+
+.iconqita:before {
+	content: "\e738";
+}
+/* -------------iconfont图标end----------------- */
+
+
+li {
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #787880;
+}
+
+/* clearfix  清除浮动start */
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+	clear: both;
+}
+/* ---清除浮动end -----*/
+
+/* header位置下拉框公共样式start */
+.el-header{
+	div{
+		.el-select{
+			input{
+				background-image: url("../../assets/img/home/selectDropdown.png");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+/* header位置下拉框公共样式end */
+
+/* 表格单元格不换行start */
+.el-table{
+	td.detailCls{
+		.cell{
+			display: flex;
+		}
+	}
+	td.operationColumnCls{
+		.cell{
+			padding: 0 20px;
+			text-align: left;
+		}
+	}
+	td.detailCenterCls{
+		.cell{
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+.el-table .cell{
+	white-space: nowrap;
+	/* display: flex; */
+	>span:nth-of-type(1){
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	>span.showDetailCls{
+		cursor: pointer;
+	}
+	>span>i{
+		margin-left: 5px;
+		font-size: 18px;
+		vertical-align: middle;
+		color: #809CC6;
+	}
+}
+/* 表格单元格不换行end */
+
+/* 表格内人工审核通过状态文字样式 --全局公用*/
+.el-table{
+	td.manualReviewCls{
+		.logPassColor{
+			color:#70B603
+		}
+		.logrefuseColor{
+			color:#D9001B
+		}
+		.logdefaultColor{
+			color:#666666
+		}
+	}
+}
+
+/*表格内的开关样式覆盖  全局共用*/
+table tbody .el-switch__core{
+	border:1px solid rgba(217,217,217,1)!important;
+	&:after{
+		left: 0px;
+	}
+}
+
+/* 表格行置灰样式 disable-row  全局共用 */
+.el-main{
+	.el-table{
+		tr.disable-row{
+			background-color: #f5f5f5;
+		}
+	}
+	.el-table--striped .el-table__body tr.disable-row td{
+		background-color: #f5f5f5!important;
+	}
+}
+
+/* 用户管理模块第三方绑定单元格图标样式 */
+#useTableId{
+	.thirdBindingCls{
+		i{
+			font-size: 18px;
+			color: #C93931;
+		}
+		i:not(:first-child){
+			margin-left: 20px;
+		}
+	}
+}
+
+/* --------修改用户弹框样式覆盖start------------ */
+.edituserCls{
+	>.el-dialog__header{
+		border-bottom: 1px solid #D9D9D9;
+		padding: 15px 20px;
+		>.el-dialog__title{
+			font-size: 20px;
+			font-family: MicrosoftYaHei;
+			color: #1A1A1A;
+		}
+		.el-dialog__close{
+			color: rgba(128,128,128,1);
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+	>.el-dialog__body{
+		/* max-height: 220px;
+		height: 210px;
+		overflow: auto; */
+		padding-bottom: 0;
+	}
+	>.el-dialog__footer{
+		button.el-button--primary{
+			background: #C93931;
+			border-color: #C93931;
+		}
+		.el-button--default{
+			background-color: #B3B3B3;
+			border-color:#B3B3B3;
+			color: #FFFFFF;
+			&:hover{
+
+			}
+		}
+	}
+	/* 用户模块--头像上传样式 */
+	.avatorForm{
+		.el-form-item__content{
+			display: flex;
+		}
+	}
+
+	.el-form-item__content{
+		span.el-upload-list__item-actions{
+			span.el-upload-list__item-preview{
+				i{
+					display: none;
+				}
+			}
+			span.el-upload-list__item-delete{
+				margin-left: 0;
+			}
+		}
+	}
+	.initBtn{
+		display: inline-block;
+		width: 50px;
+		height: 20px;
+		border-radius: 10px;
+		background: rgb(202, 162, 103);
+		vertical-align: bottom;
+		margin-left: 10px;
+		cursor: pointer;
+		line-height: 20px;
+		color: #ffffff;
+		font-size: 12px;
+		text-align: center;
+	}
+}
+/* --------修改用户弹框样式覆盖end------------ */
+
+/* -----------拖拽样式--公用start---------- */
+.sortable-ghost-class {
+	background-color: #C8EBFB;
+}
+/*.el-dragRowCls{
+	cursor: pointer;
+}*/
+.el-dragRowCls{
+	cursor: grab;
+}
+.el-dragRowCls:active{
+	cursor: grabbing;
+}
+/* -----------拖拽样式公用 END ---------------- */
+
+/*tool-tip样式公用--覆盖*/
+.el-tooltip__popper{
+	max-width: 500px;
+	word-break: break-all;
+	line-height: 1.8;
+}
+.el-tooltip__popper.is-dark {
+    background: rgba(48, 49, 51, 0.8);
+    color: #FFFFFF;
+}
+/*[x-placement^="top"]*/
+body .el-tooltip__popper .popper__arrow{
+	border-top-color: rgba(48, 49, 51, 0.8)!important;
+	&::after{
+		border-top-color: rgba(48, 49, 51, 0)!important;
+	}
+}
+
+/*弹框头部公用*/
+.commonHeader{
+  >.el-dialog__header{
+    border-bottom: 1px solid #D9D9D9;
+    padding: 15px 20px;
+    >.el-dialog__title{
+      font-size: 20px;
+      font-family: MicrosoftYaHei;
+      color: #1A1A1A;
+    }
+    .el-dialog__close{
+      color: rgba(128,128,128,1);
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+/*订阅号审核弹框内的样式*/
+.subscriptionViewCls {
+  .operatorCls,.basicCls{
+    input{
+      /* background:rgba(245,245,245,1); */
+      /* border:1px solid rgba(217,217,217,1); */
+    }
+    .el-textarea__inner{
+      /* background:rgba(245,245,245,1); */
+     /* border:1px solid rgba(217,217,217,1); */
+    }
+  }
+  .el-scrollbar{
+	  height: 100%;
+	  >.el-scrollbar__wrap{
+		  overflow-x: hidden;
+	  }
+  }
+}
+
+/*对于scroolBar样式问题*/
+.forScrollBar{
+	.el-scrollbar{
+		height: 100%;
+		>.el-scrollbar__wrap{
+			overflow-x: hidden;
+		}
+	}
+}
+
+/*全局遮罩图标和文字样式*/
+.fullLoadingCls{
+	.el-loading-spinner{
+		i{
+			font-size: 50px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+}
+
+/*公用组件el-drawer样式，在home下  不这样写会影响其他弹框的样式*/
+#app{
+	.home{
+		.containerCls{
+			>div.el-dialog__wrapper{
+				width: 600px;
+				left: auto;
+				>div.el-drawer__container.el-drawer__open{
+					width: 600px;
+					left: auto;
+				}
+			}
+		}
+	}
+}
+
+/*搜索按钮样式  全局共用*/
+.globalSearchBtnBg{
+	background: linear-gradient(to bottom, #d4615a, #d4615a 50%, #c93931 50%, #c93931 100%);
+}
+
+/*删除历史 按钮样式  全局共用*/
+.globalHistoryDeleteBtnBg{
+	width: 93px;
+	height: 28px;
+	/* background: rgba(201, 57, 49, 1); */
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #c93931 ;
+	color: #c93931 ;
+	text-align: center;
+	line-height: 28px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/* 超出宽度...显示  全局共用 */
+.global_ellipsis {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.global_ellipsis_nowidth {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */

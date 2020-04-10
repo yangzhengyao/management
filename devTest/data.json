@@ -1,0 +1,9 @@
+{
+  "name": "smith",
+  "age": 28,
+  "sex": "男",
+  "school": {
+    "sname": "南京大学",
+    "address": "南京市鼓楼区汉口路22号"
+  }
+}
